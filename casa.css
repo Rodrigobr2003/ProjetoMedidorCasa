@@ -1,0 +1,267 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+/*---------------- conteudo CABEÇALHO ----------------*/
+
+
+
+#cabecalho{
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
+}
+.cabecalho-info{
+	padding: 10px;
+	color: rgb(255, 140, 26);
+	justify-content: center;
+	display: flex;
+}
+
+.cabecalho-info h1{
+	background-color: rgba(51, 51, 51, 1);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 20px;
+	box-shadow: 10;
+}
+
+
+
+/*---------------- conteudo IMAGEM ----------------*/
+
+
+
+#section-casa{
+	position: relative;
+	display: flex;
+}
+
+.sessao-img{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	border-radius: 20px;
+	padding: 15px;
+	background-color: rgb(80, 0, 0);
+	width: 600px;
+}
+
+
+
+/*---------------- conteudo BOTOES ----------------*/
+
+
+
+.btn{
+	position: absolute;
+	background-color: rgba(60, 60, 60, 0.6);
+  	color: white;
+	font-size: 16px;
+	padding: 12px 4px;
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.btn:hover{
+	background-color: rgba(30, 30, 30, 0.7);
+}
+
+
+
+/*---------------- conteudo MODAL ----------------*/
+
+
+
+.cartao{
+	display: none; /*DISPLAY NONE > faz a classe sumir*/
+	position: fixed;
+	z-index: 1;
+	background-color: rgb(64, 64, 64);
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 15px;
+	width: 44.7%;
+	height: 30%;
+	margin-top: 80px;
+	margin-left: 363px;
+}
+
+.conteudo-cartao{
+	background-color: rgb(64, 64, 64);
+  	padding-left: 20px;
+  	padding-top: 10px;
+}
+
+.conteudo-cartao h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	display: inline;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.conteudo-cartao .explicacao{
+	margin-top: 10px;
+	font-size: 1.15em;
+	background-color: rgba(24, 24, 24, 0.8);
+	border-radius: 15px;
+	color: rgb(191, 191, 191);
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.close{
+	padding: 7px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgb(255, 140, 26);
+	font-weight: bold;
+	font-size: 1em;
+	margin-right: 20px;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+
+.calc{
+	padding: 7px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgb(0, 102, 255);
+	font-weight: bold;
+	font-size: 1em;
+	margin-right: 20px;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+
+.conv{
+	padding: 7px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgb(255, 51, 0);
+	font-weight: bold;
+	font-size: 1em;
+	margin-right: 20px;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+
+.conv:hover{
+	background-color: rgb(179, 36, 0);
+	color: rgb(217, 217, 217);
+}
+
+.close:hover{
+	background-color: rgb(179, 89, 0);
+	color: rgb(217, 217, 217);
+}
+
+.calc:hover{
+	background-color: rgb(0, 71, 179);
+	color: rgb(217, 217, 217);
+}
+
+
+
+/*---------------- conteudo MODAL caluc ----------------*/
+
+
+
+.cartao-calc{
+	display: none; /*DISPLAY NONE > faz a classe sumir*/
+	position: fixed;
+	z-index: 2;
+	background-color: rgb(64, 64, 64);
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 15px;
+	width: 44.7%;
+	height: 42.5%;
+	margin-top: 80px;
+	margin-left: 363px;
+}
+
+.conteudo-calc{
+	background-color: rgb(64, 64, 64);
+  	padding-left: 20px;
+  	padding-top: 10px;
+}
+
+.tituloCalc{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2em;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	display: inline;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.conteudo-calc .explicacao{
+	margin-top: 10px;
+	font-size: 1.15em;
+	background-color: rgba(24, 24, 24, 0.8);
+	border-radius: 15px;
+	color: rgb(191, 191, 191);
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.conteudo-calc .explicacao-kwh{
+	margin-top: 10px;
+	font-size: 1.15em;
+	background-color: white;
+	border-radius: 15px;
+	color: black;
+	padding: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.voltar{
+	padding: 7px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgb(0, 204, 0);
+	font-weight: bold;
+	font-size: 1em;
+	margin-right: 20px;
+	margin-top: 10px;
+	float: right;
+	position: relative;
+}
+
+.voltar:hover{
+	background-color: rgb(0, 128, 0);
+	color: rgb(217, 217, 217);
+}
+
+
+
+/*---------------- conteudo MODAL caluc ----------------*/
+
+
+
+.cardConverter{
+	display: none; /*DISPLAY NONE > faz a classe sumir*/
+	position: fixed;
+	z-index: 2;
+	background-color: rgb(64, 64, 64);
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 15px;
+	width: 44.7%;
+	height: 42.5%;
+	margin-top: 80px;
+	margin-left: 363px;
+}

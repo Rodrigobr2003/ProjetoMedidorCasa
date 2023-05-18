@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Medidor de Kw/h</title>
+	<link rel="stylesheet" type="text/css" href="casa.css">
+	<link rel="icon" href="imagens/eletricidade.png">
+	<script src="casa.js"></script>
+</head>
+<body>
+
+	<header id="cabecalho">
+		<div class="cabecalho-info">
+			<h1>Medidor de Kw/h em uma casa</h1>
+		</div>
+	</header>
+	<article id="section-casa">
+		<div class="sessao-img">
+			<img src="imagens/casa.jpeg" class="img">
+
+			<button class="btn" style="top: 33%; left: 54.5%;" id="chuveiro" onclick="disparo(this.id)">Ligar</button>
+
+			<button class="btn" style="top: 55%; left: 50.8%;" id="lampada" onclick="disparo(this.id)">Ligar</button>
+
+			<button class="btn" style="top: 61.5%; left: 57.2%;" id="tv" onclick="disparo(this.id)" >Ligar</button>
+
+			<button class="btn" style="bottom: 8%; right: 36.55%;" id="maquina" onclick="disparo(this.id)">Ligar</button>
+
+			<button class="btn" style="bottom: 12%; right: 46.7%;" id="pc" onclick="disparo(this.id)">Ligar</button>
+
+			<button class="btn" style="bottom: 29.5%; left: 38.9%;" id="micro" onclick="disparo(this.id)">Ligar</button>
+
+			<button class="btn" style="bottom: 28%; left: 45.2%;" id="geladeira" onclick="disparo(this.id)">Ligar</button>
+
+		</div>
+			
+		<div class="cartao" id="card">
+			<div class="conteudo-cartao">
+				<h1 id="titulo-card">Título</h1>
+				<p class="explicacao" id="conteudo-card">Conteudo...</p>
+			</div>
+
+			<div class="conteudo-rodape">
+				<button class="close" id="fechar" onclick="fecharCard()">Fechar</button>
+
+				<button class="calc" id="calcular" onclick="calcular()">Calcular</button>
+			</div>
+		</div>
+
+		<div class="cartao-calc" id="cardCalc">
+			<div class="conteudo-calc">
+				<h1 class="tituloCalc" id="aparelhoTit">Título</h1>
+				<div class="explicacao">
+					<p>Insira o número de horas utilizadas pelo aparelho:</p>
+					<br>
+					<input type="range" name="horas" id="horas" min="1" max="24" step="1" style="width: 400px;" onclick="range()"> <p id="displayHoras">display:horas</p>
+				</div>
+			</div>
+
+			<div class="conteudo-calc">
+				<div class="explicacao-kwh">
+					<p id="kwh">O valor de KwH gastos no tempo de ... hora(s) é de: ... Kw/h</p>
+				</div>
+			</div>
+
+			<div class="calc-rodape">
+				<button class="close" id="fechar" onclick="fecharCard()">Fechar</button>
+				<button class="calc" id="calcular" onclick="calculador()">Calcular</button>
+				<button class="conv" id="calcular" onclick="converter()">Converter</button>
+				<button class="voltar" id="voltar" onclick="voltar()">Voltar</button>
+			</div>
+		</div>
+
+		<div class="cardConverter" id="cardConv" style="height: 150px">
+			<div class="conteudo-calc">
+				<h1 class="tituloCalc" id="aparelhoTit">Conversão em Reais</h1>
+				<div class="explicacao">
+					<p id="resultadoFinal">O total de Reais gastos...</p>
+				</div>
+			</div>
+
+			<div class="converter-rodape">
+				
+			</div>
+			<button class="close" id="fechar" onclick="fecharCard()">Fechar</button>
+			<button class="voltar" id="voltar" onclick="voltar2()">Voltar</button>
+		</div>
+
+	</article>
+
+</body>
+</html>
